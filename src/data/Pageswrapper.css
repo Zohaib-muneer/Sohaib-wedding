@@ -1,0 +1,15 @@
+@reference "tailwindcss";
+@import"tailwindcss";
+
+
+.page-wrapper {
+  @apply 
+  bg-[#420508] 
+  /* fixed inset-0 -z-50  */
+  relative z-10 
+  /* pointer-events-none mix-blend-screen opacity-80 */
+  h-full w-full p-4 min-h-screen flex justify-center  items-center ;
+}
+.insidewraper{
+  @apply flex flex-col gap-y-4 justify-center items-center
+}

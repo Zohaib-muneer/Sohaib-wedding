@@ -1,0 +1,120 @@
+@import "tailwindcss";
+/* @reference "./index.css"; */
+.page-frame {
+ animation: var(--animate-page-in); 
+  /* animation: var(--animate-page-in ); */
+  @apply bg-[#420508] h-full w-full p-2 flex-col justify-center items-center text-shadow-lg  ;
+}
+@utility page-frame {
+  /* padding: 0.75rem 1.5rem; */
+  /* background-color: #4f46e5; */
+  /* color: #ffffff; */
+  /* font-weight: 500; */
+  border-radius: 0.75rem;
+  border: 4px solid #ab8115;
+  outline: 1px solid #ab8115;
+  outline-offset: 4px;
+  justify-content: center;
+  
+}
+
+
+@keyframes rotate-border {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+/* Explicitly register the property so it can be smoothly animated */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.border-gradient{
+  @apply bg-[#420508] w-full h-full flex-col justify-center items-center
+}
+
+@utility border-gradient {
+  position:relative;
+  
+  padding: 3px; 
+  /* This sets the thickness of the moving border */
+  border-radius: 0.93rem; 
+  /* Outer border radius */
+  background-image: conic-gradient(
+    from var(--border-angle),
+    #f6de81, /* Indigo */
+    #420508, /* Pink */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #f6de81  /* Loop back to Indigo */
+  );
+  
+  /* Trigger the rotation animation */
+  animation: rotate-border 6s linear infinite;
+}
+.bismillah {
+  @apply flex justify-center items-center mb-4;
+}
+h1 {
+  font-family: var(--font-birthstone);
+  @apply text-[#f6de81] text-3xl md:text-6xl font-bold font-stretch-ultra-expanded;
+
+}
+
+.invited {
+  @apply  flex justify-center items-center text-center mb-6 ;
+}
+
+h2 {
+  font-family: var(--font-cinzel);
+  @apply text-[#f6de81]  text-2xl md:text-4xl font-semibold;
+  
+}
+.message {
+  font-family: var(--font-play);
+  @apply text-[#C4C4C4] text-base
+  md:text-xl 
+  /* indent-9 */
+  flex justify-center items-center text-center text-clip mb-6;
+}
+
+.bridale{
+  font-family: var(--font-wedding);
+  @apply text-[#f6de81] text-lg md:text-xl flex-col  [leading-height:1.2em] [word-spacing:10px] justify-center items-center mb-4;
+}
+.date{
+  font-family: var(--font-lato);
+  @apply text-[#f6de81] text-lg md:text-xl flex justify-center items-center mb-4;
+}
+.looking{
+  font-family: var(--font-sofia);
+  @apply text-[#f6de81] text-lg md:text-xl flex-col justify-center items-center mb-4;
+}
+.looking-text{
+  @apply flex justify-center items-center mb-4 underline decoration-[#f6de81] decoration-2 underline-offset-4;
+}
+.looking-text1{
+  @apply  justify-self-center ;
+}
+.bridale-text{
+  @apply flex text-2xl md:text-4xl font-light justify-center items-center mb-3;
+}
+.date{
+  @apply flex-col justify-center items-center mb-3;
+}
+.date-text1{
+  @apply underline  text-[#C4C4C4] decoration-[#f6de81] decoration-4 underline-offset-5 mb-4;
+}
+p7{
+  @apply text-2xl md:text-4xl text-[#420508] bg-[#f6de81] rounded-xl font-bold ;
+}
+.line{
+  @apply flex justify-center items-center decoration-[#f6de81] decoration-5 underline-offset-2
+ border-t-4 mx-auto my-2 w-1/2;
+ }

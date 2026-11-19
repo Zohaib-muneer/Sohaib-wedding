@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Open state organic curtain swaying */
+@keyframes breezeSwayLeft {
+  0%, 100% {
+    transform: translateX(0px) skewX(0deg) scaleX(1);
+  }
+  40% {
+    transform: translateX(11px) skewX(-1.3deg) scaleX(0.99);
+  }
+  75% {
+    transform: translateX(4px) skewX(-0.5deg) scaleX(1.005);
+  }
+}
+
+@keyframes breezeSwayRight {
+  0%, 100% {
+    transform: translateX(0px) skewX(0deg) scaleX(1);
+  }
+  40% {
+    transform: translateX(-11px) skewX(1.3deg) scaleX(0.99);
+  }
+  75% {
+    transform: translateX(-4px) skewX(0.5deg) scaleX(1.005);
+  }
+}
+
+/* Closed state subtle velvet breathing / air draft */
+@keyframes closedBreezeLeft {
+  0%, 100% {
+    transform: scaleX(1) skewX(0deg);
+  }
+  50% {
+    transform: scaleX(1.016) skewX(-0.65deg);
+  }
+}
+
+@keyframes closedBreezeRight {
+  0%, 100% {
+    transform: scaleX(1) skewX(0deg);
+  }
+  50% {
+    transform: scaleX(1.016) skewX(0.65deg);
+  }
+}
+
+/* Smooth pendulum sway for hanging braided strings */
+@keyframes cordSwayLeft {
+  0%, 100% {
+    transform: rotate(-1.8deg);
+  }
+  50% {
+    transform: rotate(2.2deg);
+  }
+}
+
+@keyframes cordSwayRight {
+  0%, 100% {
+    transform: rotate(1.8deg);
+  }
+  50% {
+    transform: rotate(-2.2deg);
+  }
+}
+
+.animate-breeze-left {
+  animation: breezeSwayLeft 5.4s ease-in-out infinite;
+}
+
+.animate-breeze-right {
+  animation: breezeSwayRight 5.4s ease-in-out infinite;
+}
+
+.animate-closed-left {
+  animation: closedBreezeLeft 4.2s ease-in-out infinite;
+}
+
+.animate-closed-right {
+  animation: closedBreezeRight 4.2s ease-in-out infinite;
+}
+
+.animate-cord-left {
+  animation: cordSwayLeft 3.8s ease-in-out infinite;
+}
+
+.animate-cord-right {
+  animation: cordSwayRight 3.8s ease-in-out infinite;
+}

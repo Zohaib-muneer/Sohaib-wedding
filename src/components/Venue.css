@@ -1,0 +1,82 @@
+@reference "tailwindcss";
+@import "tailwindcss";
+
+.venuepage{
+    font-family: var(--font-cinzel);
+    @apply flex flex-col items-center p-2 justify-center h-full w-full bg-[#420508] shadow-lg;
+}
+.Venueheading{
+  @apply text-[#D1D1D1] text-2xl text-center md:text-3xl text-shadow-lg font-bold font-stretch-ultra-expanded mb-8;
+}
+@utility venuepage{
+  /* padding: 0.75rem 1.5rem; */
+  /* background-color: #4f46e5; */
+  /* color: #ffffff; */
+  /* font-weight: 500; */
+  border-radius: 0.75rem;
+  border: 4px solid #D1D1D1;
+  outline: 1px solid #B3B3B3;
+  outline-offset: 4px;
+  justify-content: center;
+  
+}
+
+@keyframes rotate-border {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+/* Explicitly register the property so it can be smoothly animated */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.bordervenue{
+  @apply bg-[#420508] w-full h-full flex-col justify-center items-center;
+}
+
+@utility bordervenue {
+  position:relative;
+  
+  padding: 3px; 
+  /* This sets the thickness of the moving border */
+  border-radius: 0.93rem; 
+  /* Outer border radius */
+  background-image: conic-gradient(
+    from var(--border-angle),
+    #FFFFFF, /* Indigo */
+    #420508, /* Pink */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #FFFFFF  /* Loop back to Indigo */
+  );
+  
+  /* Trigger the rotation animation */
+  animation: rotate-border 6s linear infinite;
+}
+.Venuemessage{
+    font-family: var(--font-play);
+    @apply  flex items-center justify-center text-[#D1D1D1] text-base md:text-xl  text-center text-shadow-lg mb-10;
+}
+.venueaddress{
+    
+    font-family: var(--font-symphony);
+    @apply indent-8 flex items-center justify-center text-[#D1D1D1] text-lg md:text-xl  text-center text-shadow-lg mb-10;
+}
+
+
+/* w-full max-w-4xl mx-auto aspect-[4/3] sm:aspect-video rounded-xl overflow-hidden shadow-md */
+.Venuemap{
+  @apply flex flex-col justify-center items-center mb-10;
+}
+.Venuemap iframe {
+  @apply w-full h-70 max-w-4xl aspect-[4/3] sm:aspect-video mx-auto border-0 border-gray-200 rounded-xl mb-4 shadow-xl flex;
+}
+
+

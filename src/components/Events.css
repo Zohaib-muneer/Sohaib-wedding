@@ -1,0 +1,113 @@
+@references"tailwindcss";
+@import "tailwindcss";
+
+.eventspage{
+    font-family: var(--font-cinzel);
+    @apply  h-full w-full p-2 flex flex-col items-center justify-center  bg-[#420508]
+     /* opacity-90 transition-all duration-500 ease-in-out hover:opacity-100 hover:-translate-y-3 */
+     
+     ;
+}
+.eventspage {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keeps all direct text/icon sections above BreezeBackground without breaking flex/grid */
+.eventspage > :not(.breeze-bg) {
+  position: relative;
+  z-index: 10;
+}
+@utility eventspage{
+  /* padding: 0.75rem 1.5rem; */
+  /* background-color: #4f46e5; */
+  /* color: #ffffff; */
+  /* font-weight: 500; */
+  border-radius: 0.75rem;
+  border: 4px solid #C4C4C4;
+  outline: 1px solid #989898;
+  outline-offset: 4px;
+  justify-content: center;
+  
+}
+
+@keyframes rotate-border {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+/* Explicitly register the property so it can be smoothly animated */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.borderevent{
+  @apply bg-[#420508] w-full h-full flex-col justify-center items-center
+}
+
+@utility borderevent {
+  position:relative;
+  
+  padding: 3px; 
+  /* This sets the thickness of the moving border */
+  border-radius: 0.93rem; 
+  /* Outer border radius */
+  background-image: conic-gradient(
+    from var(--border-angle),
+    #E8E8E8, /* Indigo */
+    #420508, /* Pink */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #420508, /* Cyan */
+    #E8E8E8  /* Loop back to Indigo */
+  );
+  
+  /* Trigger the rotation animation */
+  animation: rotate-border 6s linear infinite;
+}
+.Eventtime{
+    @apply flex flex-row gap-4 items-center justify-center mb-20 ;
+}
+.Eventheading{
+    /* @apply text-[#f6de81] text-2xl md:text-4xl font-semibold; */
+     @apply text-[#C4C4C4] text-2xl text-center md:text-3xl text-shadow-lg font-bold font-stretch-ultra-expanded mb-8;
+}
+
+.Eventinvited{
+    @apply text-[#C4C4C4] text-2xl md:text-4xl font-semibold text-shadow-lg mb-6
+    opacity-90 transition-all duration-500 ease-in-out hover:opacity-100 hover:-translate-y-3;
+}
+
+.Eventmessage{
+    font-family: var(--font-play);
+    @apply flex items-center justify-center text-[#C4C4C4] text-base md:text-xl  text-center text-shadow-lg mb-10;
+}
+
+
+.reception{
+    font-family: var(--font-sofia);
+    @apply flex-row items-center justify-center text-[#C4C4C4] ;
+}
+.dinner{
+    font-family: var(--font-sofia);
+    @apply flex-row items-center justify-center text-[#C4C4C4] ;
+}
+.time{
+    @apply flex items-center justify-center text-xs md:text-sm text-shadow-lg font-semibold;
+}
+.lable{
+    @apply flex items-center justify-center text-[#C4C4C4] text-base md:text-lg font-semibold text-shadow-lg;
+}
+
+.eventline {
+  @apply flex justify-center items-center border-l-4 border-[#C4C4C4] h-40 decoration-double my-auto mx-2;
+}
+
+.icon {
+  @apply flex justify-center w-35 h-25
+}
