@@ -1,0 +1,74 @@
+ @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Parisienne&display=swap');
+
+@import "tailwindcss";
+ @import "@fontsource/great-vibes/latin-400.css";
+ @import "@fontsource/birthstone/latin-400.css";
+ @import "@fontsource/playfair-display/latin-400.css";
+ @import "@fontsource/cinzel-decorative/latin-400.css";
+ @import "@fontsource/sofia/latin-400.css";
+ @import "@fontsource/lato/latin-400.css";
+
+@font-face {
+  font-family: Symphony;
+  src: url("../assets/fonts/Symphony.otf");
+ }
+
+ @font-face {
+  font-family: Ruthie;
+  src: url("../assets/fonts/Ruthie-Regular.ttf");
+}
+
+ 
+  @keyframes page-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    @keyframes pageIn {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pageOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+  }
+
+@theme {
+  /* Register the custom font name */
+   --animate-page-in: pageIn 0.4s ease-out forwards;
+  --animate-page-out: pageOut 0.3s ease-in forwards;
+   --animate-page-enter: "page-enter" 0.4s ease-out forwards;
+  --font-wedding: "Great Vibes", cursive;
+  --font-birthstone: "Birthstone", cursive;
+  --font-symphony: "Symphony", cursive;
+  --font-ruthie: "Ruthie", cursive;
+  --font-cinzel: "Cinzel Decorative", cursive;
+  --font-love:"Love Light", cursive;
+  --font-bilbo:"Bilbo", cursive;
+  --font-play: "Playfair Display", serif; 
+  --font-lato: "Lato", serif; 
+  --font-sofia: "Sofia", serif; 
+  --font-parisienne: "Parisienne", cursive;
+  --font-lora: "Lora", serif;
+}

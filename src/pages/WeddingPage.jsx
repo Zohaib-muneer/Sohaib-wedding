@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import "./Pageswrapper.css";
+import "./WeddingPage.css";
 import { AnimatedBackground } from 'animated-backgrounds'
 import { LayeredBackground } from 'animated-backgrounds'
 import MovingCurtains from '../components/MovingCurtains';
-import Hero from "../components/Hero";
-import Events from "../components/Events";
-import Venue from "../components/Venue";
-import Rsvp from "../components/Rsvp";
+import Hero from "../sections/Hero/Hero";
+import Events from "../sections/Events/Events";
+import Venue from "../sections/Venue/Venue";
+import Rsvp from "../sections/Rsvp/Rsvp";
 
 const layers = [
   { animation: 'starryNight', opacity: 0.8, blendMode: 'normal', speed: 0.5 },

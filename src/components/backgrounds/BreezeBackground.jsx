@@ -10,14 +10,31 @@ const GOLD_DUST = [
   { top: '55%', left: '18%', size: 'w-1 h-1', delay: '4.2s', duration: '9.5s' },
   { top: '50%', left: '82%', size: 'w-1.5 h-1.5', delay: '2.7s', duration: '10.5s' },
   { top: '62%', left: '50%', size: 'w-1 h-1', delay: '5s', duration: '11.5s' },
+  { top: '24%', left: '8%', size: 'w-1.5 h-1.5', delay: '1.8s', duration: '10s' },
+  { top: '36%', left: '32%', size: 'w-1 h-1', delay: '3.2s', duration: '12s' },
+  { top: '18%', left: '66%', size: 'w-1.5 h-1.5', delay: '5.6s', duration: '9s' },
+  { top: '42%', left: '93%', size: 'w-1 h-1', delay: '2.4s', duration: '10.5s' },
+  { top: '94%', left: '30%', size: 'w-1 h-1', delay: '4.8s', duration: '11s' },
+  { top: '30%', left: '54%', size: 'w-2 h-2', delay: '6.3s', duration: '9.5s' },
+  { top: '76%', left: '91%', size: 'w-1 h-1', delay: '7.1s', duration: '12s' },
+  { top: '58%', left: '4%', size: 'w-1.5 h-1.5', delay: '8s', duration: '10s' },
 ];
 
 const PETALS_DATA = [
-  { left: '15%', delay: '0s', duration: '15s', size: 'w-3.5 h-2.5' },
-  { left: '34%', delay: '4s', duration: '17s', size: 'w-3 h-2' },
-  { left: '55%', delay: '2s', duration: '14s', size: 'w-4 h-3' },
-  { left: '72%', delay: '6.5s', duration: '16s', size: 'w-3 h-2' },
-  { left: '86%', delay: '9s', duration: '18s', size: 'w-3.5 h-2.5' },
+  { left: '7%', delay: '0s', duration: '15s', size: 'w-3.5 h-2.5' },
+  { left: '14%', delay: '4s', duration: '17s', size: 'w-3 h-2' },
+  { left: '21%', delay: '2s', duration: '14s', size: 'w-4 h-3' },
+  { left: '28%', delay: '6.5s', duration: '16s', size: 'w-3 h-2' },
+  { left: '35%', delay: '9s', duration: '18s', size: 'w-3.5 h-2.5' },
+  { left: '42%', delay: '1.5s', duration: '16s', size: 'w-3 h-2' },
+  { left: '49%', delay: '7s', duration: '19s', size: 'w-4 h-3' },
+  { left: '56%', delay: '3s', duration: '15s', size: 'w-3 h-2' },
+  { left: '63%', delay: '11s', duration: '17s', size: 'w-3.5 h-2.5' },
+  { left: '70%', delay: '5s', duration: '20s', size: 'w-3 h-2' },
+  { left: '77%', delay: '8.5s', duration: '14s', size: 'w-4 h-3' },
+  { left: '84%', delay: '12s', duration: '18s', size: 'w-3 h-2' },
+  { left: '91%', delay: '2.5s', duration: '16s', size: 'w-3.5 h-2.5' },
+  { left: '96%', delay: '10s', duration: '19s', size: 'w-3 h-2' },
 ];
 
 const STARS_DATA = [
@@ -27,12 +44,25 @@ const STARS_DATA = [
   { top: '15%', left: '56%', delay: '0.7s', duration: '4.5s' },
   { top: '34%', left: '85%', delay: '1.9s', duration: '3.2s' },
   { top: '29%', left: '12%', delay: '3.1s', duration: '4.8s' },
+  { top: '42%', left: '24%', delay: '2.8s', duration: '4.1s' },
+  { top: '48%', left: '67%', delay: '0.4s', duration: '3.7s' },
+  { top: '57%', left: '9%', delay: '3.6s', duration: '4.6s' },
+  { top: '61%', left: '42%', delay: '1.5s', duration: '3.4s' },
+  { top: '68%', left: '88%', delay: '2.2s', duration: '4.3s' },
+  { top: '76%', left: '27%', delay: '4s', duration: '3.6s' },
+  { top: '83%', left: '59%', delay: '1s', duration: '4.7s' },
+  { top: '91%', left: '76%', delay: '3.3s', duration: '3.9s' },
+  { top: '39%', left: '96%', delay: '4.5s', duration: '4.2s' },
+  { top: '8%', left: '43%', delay: '2.1s', duration: '3.8s' },
 ];
 
 const LANTERNS_DATA = [
   { left: '16%', delay: '0s', duration: '15s' },
   { left: '48%', delay: '5s', duration: '18s' },
   { left: '80%', delay: '2.5s', duration: '16s' },
+  { left: '30%', delay: '8s', duration: '17s' },
+  { left: '64%', delay: '11s', duration: '19s' },
+  { left: '93%', delay: '6.5s', duration: '16s' },
 ];
 
 const HEARTS_DATA = [
@@ -42,6 +72,25 @@ const HEARTS_DATA = [
   { left: '88%', delay: '6s', duration: '12.5s', size: 'w-4 h-4' },
   { left: '14%', delay: '8.5s', duration: '16s', size: 'w-3 h-3' },
   { left: '82%', delay: '10s', duration: '14.5s', size: 'w-3 h-3' },
+  { left: '35%', delay: '3s', duration: '15.5s', size: 'w-3.5 h-3.5' },
+  { left: '49%', delay: '7s', duration: '13.5s', size: 'w-4 h-4' },
+  { left: '63%', delay: '11s', duration: '16s', size: 'w-3 h-3' },
+  { left: '94%', delay: '13s', duration: '14s', size: 'w-3.5 h-3.5' },
+];
+
+const WEDDING_SHAPES_DATA = [
+  { left: '7%', delay: '0s', duration: '19s', size: 'w-6 h-6', type: 'flower' },
+  { left: '21%', delay: '5s', duration: '22s', size: 'w-5 h-5', type: 'diamond' },
+  { left: '37%', delay: '2.5s', duration: '20s', size: 'w-7 h-7', type: 'flower' },
+  { left: '63%', delay: '8s', duration: '23s', size: 'w-5 h-5', type: 'sparkle' },
+  { left: '79%', delay: '3s', duration: '21s', size: 'w-6 h-6', type: 'flower' },
+  { left: '93%', delay: '10s', duration: '24s', size: 'w-5 h-5', type: 'diamond' },
+  { left: '14%', delay: '12s', duration: '23s', size: 'w-5 h-5', type: 'sparkle' },
+  { left: '29%', delay: '7s', duration: '20s', size: 'w-6 h-6', type: 'diamond' },
+  { left: '45%', delay: '15s', duration: '24s', size: 'w-5 h-5', type: 'flower' },
+  { left: '55%', delay: '4s', duration: '22s', size: 'w-6 h-6', type: 'diamond' },
+  { left: '72%', delay: '13s', duration: '21s', size: 'w-5 h-5', type: 'sparkle' },
+  { left: '86%', delay: '6s', duration: '25s', size: 'w-6 h-6', type: 'flower' },
 ];
 
 const THEMES = {
@@ -168,19 +217,21 @@ function CornerOrnament({ className }) {
 }
 
 export default function BreezeBackground({
-  theme = 'crimson',        // 'crimson' | 'emerald' | 'midnight' | 'burgundy'
+  theme = 'rmove',        // 'crimson' | 'emerald' | 'midnight' | 'burgundy'
+  // theme = false,        // 'crimson' | 'emerald' | 'midnight' | 'burgundy'
   petalType = 'rose',       // 'rose' | 'marigold' | 'jasmine'
-  showParticles = true,
-  showPetals = true,
-  showArch = true,
-  showGarlands = true,      // Top swaying bridal flower garlands (Gajra/Haar)
-  showJhumkas = true,       // Hanging swaying bridal jhumkas
-  showPaisley = true,      // Side henna / mehndi paisley line-art
-  showRings = true,        // Interlocked wedding rings drawing (great for RSVP/Hero)
+  showParticles = false,
+  showPetals = false,
+  showArch = false,
+  showGarlands = false,      // Top swaying bridal flower garlands (Gajra/Haar)
+  showJhumkas = false,       // Hanging swaying bridal jhumkas
+  showPaisley = false,      // Side henna / mehndi paisley line-art
+  showRings = false,        // Interlocked wedding rings drawing (great for RSVP/Hero)
   showStars = false,
   showLanterns = false,
   showHearts = false,
   showCorners = false,
+  showWeddingShapes = false,
 }) {
   const activeTheme = THEMES[theme] || THEMES.crimson;
 
@@ -334,6 +385,47 @@ export default function BreezeBackground({
             fill="currentColor"
           >
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        ))}
+
+      {showWeddingShapes &&
+        WEDDING_SHAPES_DATA.map((shape, idx) => (
+          <svg
+            key={idx}
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            style={{
+              left: shape.left,
+              animationDelay: shape.delay,
+              animationDuration: shape.duration,
+            }}
+            className={`absolute bottom-0 text-amber-200/60 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] animate-wedding-shape ${shape.size}`}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.2"
+          >
+            {shape.type === 'flower' ? (
+              <>
+                {[0, 60, 120].map((angle) => (
+                  <ellipse
+                    key={angle}
+                    cx="12"
+                    cy="6.5"
+                    rx="2.4"
+                    ry="4"
+                    transform={`rotate(${angle} 12 12)`}
+                  />
+                ))}
+                <circle cx="12" cy="12" r="2" fill="currentColor" />
+              </>
+            ) : shape.type === 'diamond' ? (
+              <>
+                <path d="M12 2 19 9 12 22 5 9 12 2Z" />
+                <path d="M5 9h14" />
+              </>
+            ) : (
+              <path d="M12 1 14.5 9.5 23 12 14.5 14.5 12 23 9.5 14.5 1 12 9.5 9.5 12 1Z" />
+            )}
           </svg>
         ))}
 

@@ -202,6 +202,23 @@
   }
 }
 
+@keyframes weddingShapeRise {
+  0% {
+    transform: translate3d(0, 12vh, 0) rotate(-15deg) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  55% {
+    transform: translate3d(18px, -48vh, 0) rotate(35deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-12px, -105vh, 0) rotate(75deg) scale(0.85);
+    opacity: 0;
+  }
+}
+
 .animate-breeze-wave {
   animation: breezeLightWave 8s ease-in-out infinite;
 }
@@ -259,4 +276,8 @@
 
 .animate-corner {
   animation: cornerPulse 6s ease-in-out infinite;
+}
+
+.animate-wedding-shape {
+  animation: weddingShapeRise 21s ease-in-out infinite;
 }

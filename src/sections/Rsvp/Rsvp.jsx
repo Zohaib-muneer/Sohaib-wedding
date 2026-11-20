@@ -1,15 +1,18 @@
 import "./Rsvp.css";
-import Breeze from "./BreezeBackground"
+import Breeze from "../../components/backgrounds/BreezeBackground"
+import RoyalRsvpHdBg from "../../components/backgrounds/RoyalRsvpHdBg";
 export default function Rsvp() {
   return (
     <div className="bordersvp">
       <div className="rsvppage">
+        <RoyalRsvpHdBg theme="burgundy" />
         <Breeze
       
                   theme="burgundy"       // 'crimson' | 'emerald' | 'midnight' | 'burgundy'
                   petalType="marigold"      // 'rose' | 'marigold' | 'jasmine'
                   showParticles={true}
                   showPetals={true}
+                  showWeddingShapes={true}
                   showArch={false}
                   showGarlands={false}      // Top swaying bridal flower garlands (Gajra/Haar)
                   showJhumkas={false}       // Hanging swaying bridal jhumkas
@@ -39,7 +42,7 @@ export default function Rsvp() {
             </div>
             <div className="name2">
               <div className="name">
-                Umer Zulfiqar
+                Omer Zulfiqar
               </div>
               <div className="contactnumber">
                 Moible: +92 315 4246233
@@ -51,13 +54,13 @@ export default function Rsvp() {
               Zohaib Muneer
             </div>
             <div className="Subnames2">
-              Abaan Umer
+              Abaan Omer
             </div>
             <div className="Subnames3">
-              Husain Umer
+              Husain Omer
             </div>
             <div className="Subnames4">
-              Mansoor Umer
+              Mansoor Omer
             </div>
           </div>
         </div>

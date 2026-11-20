@@ -7,7 +7,7 @@ import {
   useMotionTemplate,
 } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import locationicon from "../assets/locationicon.lottie?url";
+import locationicon from "../assets/animations/locationicon.lottie?url";
 
 interface Ripple {
   id: number;

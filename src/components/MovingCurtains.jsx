@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './MovingCurtains.css';
-import weddingNasheed from '../assets/Wedding Nasheed.mp3';
+import weddingNasheed from '../assets/audio/Wedding Nasheed.mp3';
 
 export default function MovingCurtains({ children }) {
   const [stage, setStage] = useState('closed'); // 'closed' | 'pulling' | 'open'

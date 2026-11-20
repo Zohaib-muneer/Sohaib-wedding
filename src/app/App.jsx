@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Pageswrapper from './data/Pageswrapper';
+import WeddingPage from '../pages/WeddingPage';
 
 export default function App() {
   const [showMainPage, setShowMainPage] = useState(false);
@@ -11,7 +11,7 @@ export default function App() {
       //   <Envelope onAnimationComplete={() => setShowMainPage(true)} />
       // ) :
        (
-        <Pageswrapper />
+        <WeddingPage />
         
       )}
     </>

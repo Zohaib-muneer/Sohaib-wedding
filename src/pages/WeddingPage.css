@@ -8,7 +8,8 @@
   /* fixed inset-0 -z-50  */
   relative z-10 
   /* pointer-events-none mix-blend-screen opacity-80 */
-  h-full w-full p-4 min-h-screen flex justify-center  items-center ;
+  /* h-full w-100 p-4 min-h-screen flex justify-center  items-center ; */
+  min-h-dvh w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col justify-center items-center overflow-x-hidden
 }
 .insidewraper{
   @apply flex flex-col gap-y-4 justify-center items-center

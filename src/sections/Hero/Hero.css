@@ -93,14 +93,16 @@ h2 {
   @apply text-[#f6de81] text-lg md:text-xl flex justify-center items-center mb-4;
 }
 .looking{
-  font-family: var(--font-sofia);
-  @apply text-[#f6de81] text-lg md:text-xl flex-col justify-center items-center mb-4;
-}
-.looking-text{
-  @apply flex justify-center items-center mb-4 underline decoration-[#f6de81] decoration-2 underline-offset-4;
+  /* font-family: var(--font-lora); */
+  @apply text-[#f6de81] text-lg md:text-xl flex flex-col justify-center items-center mb-4;
 }
 .looking-text1{
-  @apply  justify-self-center ;
+  font-family: var(--font-parisienne);
+  @apply flex justify-center items-center text-2xl md:text-3xl font-normal tracking-wide mb-2 underline decoration-[#f6de81] decoration-2 underline-offset-4;
+}
+.looking-text2{
+  font-family: var(--font-lora);
+  @apply justify-center text-base md:text-lg font-medium tracking-wide underline decoration-[#f6de81] decoration-2 underline-offset-4;
 }
 .bridale-text{
   @apply flex text-2xl md:text-4xl font-light justify-center items-center mb-3;
@@ -118,3 +120,17 @@ p7{
   @apply flex justify-center items-center decoration-[#f6de81] decoration-5 underline-offset-2
  border-t-4 mx-auto my-2 w-1/2;
  }
+
+ .page-frame {
+  position: relative;
+}
+
+.bismillah,
+.invited,
+.message,
+.bridale,
+.date,
+.looking {
+  position: relative;
+  z-index: 2;
+}

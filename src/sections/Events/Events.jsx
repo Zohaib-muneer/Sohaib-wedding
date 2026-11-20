@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "./Events.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import dinnericon from "../assets/dinnericon.lottie?url";
-import receptionicon from "../assets/receptionicon.lottie?url";
-import Breeze from "./BreezeBackground"
+import dinnericon from "../../assets/animations/dinnericon.lottie?url";
+import receptionicon from "../../assets/animations/receptionicon.lottie?url";
+import RoyalWalimaHdBg from "../../components/backgrounds/RoyalWalimaHdBg";
+import Breeze from "../../components/backgrounds/BreezeBackground"
 export default function Events() {
 
 
@@ -12,11 +13,14 @@ export default function Events() {
     < div className="borderevent">
 
       <div className="eventspage">
+       
+        <RoyalWalimaHdBg theme="emerald" />
         <Breeze
            theme = "emerald"       // 'crimson' | 'emerald' | 'midnight' | 'burgundy'
   petalType = "marigold"      // 'rose' | 'marigold' | 'jasmine'
   showParticles = {true}
   showPetals = {true}
+  showWeddingShapes = {true}
   showArch = {false}
   showGarlands = {true}      // Top swaying bridal flower garlands (Gajra/Haar)
   showJhumkas ={false}       // Hanging swaying bridal jhumkas
@@ -43,14 +47,14 @@ export default function Events() {
             <div className="icon">
 
               <DotLottieReact
-                // src="..\src\assets\7KE8BpMdCo.lottie" ,           s
+
                 src={receptionicon}
                 loop
                 autoplay
               />
             </div>
             <div className="lable"> Reception </div>
-            <div className="time"> 12 am </div>
+            <div className="time"> 12 pm </div>
           </div>
           <div className="eventline"></div>
           <div className="dinner">
@@ -62,8 +66,8 @@ export default function Events() {
                 autoplay
               />
             </div>
-            <div className="lable"> Dinner </div>
-            <div className="time"> 12 am </div>
+            <div className="lable"> Lunch </div>
+            <div className="time"> 2 pm </div>
           </div>
         </div>
       </div>
