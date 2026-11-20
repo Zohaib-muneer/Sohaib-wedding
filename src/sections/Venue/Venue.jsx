@@ -28,7 +28,7 @@ export default function Venue() {
           VENUE
         </div>
         <div className="Venuemessage">
-          We look forward to welcoming you to an unforgettable evening.
+          We look forward to welcoming you to an unforgettable afternoon.
         </div>
         <div className="venueaddress1">
           at Qasar-E-Nikkah

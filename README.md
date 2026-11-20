@@ -2,6 +2,25 @@
 
 A React and Vite single-page wedding invitation.
 
+## Live Demo
+
+[View the live wedding invitation](https://zohaib-muneer.github.io/Sohaib-wedding/)
+
+## Tools & Technologies
+
+- React 19
+- Vite 8
+- JavaScript and JSX
+- Tailwind CSS 4
+- Framer Motion
+- DotLottie React
+- Animated Backgrounds
+- Fontsource
+- CSS
+- Google Maps Embed
+- Oxlint
+- GitHub Pages and `gh-pages`
+
 ## Project structure
 
 ```text

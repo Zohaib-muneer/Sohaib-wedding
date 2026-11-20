@@ -20,6 +20,7 @@
     "@fontsource/sofia": "^5.3.0",
     "@lottiefiles/dotlottie-react": "^0.22.2",
     "@tailwindcss/vite": "^4.3.5",
+    "animated-backgrounds": "^2.0.0",
     "framer-motion": "^14.10.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
