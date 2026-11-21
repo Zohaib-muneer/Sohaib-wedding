@@ -1,23 +1,25 @@
- @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Parisienne&display=swap');
 
 @import "tailwindcss";
- @import "@fontsource/great-vibes/latin-400.css";
- @import "@fontsource/birthstone/latin-400.css";
- @import "@fontsource/playfair-display/latin-400.css";
- @import "@fontsource/cinzel-decorative/latin-400.css";
- @import "@fontsource/sofia/latin-400.css";
- @import "@fontsource/lato/latin-400.css";
+@import "@fontsource/great-vibes/latin-400.css";
+@import "@fontsource/birthstone/latin-400.css";
+@import "@fontsource/playfair-display/latin-400.css";
+@import "@fontsource/cinzel-decorative/latin-400.css";
+@import "@fontsource/sofia/latin-400.css";
+@import "@fontsource/lato/latin-400.css";
 
 @font-face {
   font-family: Symphony;
   src: url("../assets/fonts/Symphony.otf");
+  font-display: swap;
  }
 
  @font-face {
   font-family: Ruthie;
   src: url("../assets/fonts/Ruthie-Regular.ttf");
+  font-display: swap;
 }
 
  
@@ -71,4 +73,15 @@
   --font-sofia: "Sofia", serif; 
   --font-parisienne: "Parisienne", cursive;
   --font-lora: "Lora", serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

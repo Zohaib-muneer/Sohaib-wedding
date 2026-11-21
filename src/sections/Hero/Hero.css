@@ -1,8 +1,6 @@
 @import "tailwindcss";
-/* @reference "./index.css"; */
 .page-frame {
  animation: var(--animate-page-in); 
-  /* animation: var(--animate-page-in ); */
   @apply bg-[#420508] h-full w-full p-2 flex-col justify-center items-center text-shadow-lg  ;
 }
 @utility page-frame {

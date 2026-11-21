@@ -39,7 +39,7 @@ export default function MovingCurtains({ children }) {
         !isOpen ? 'cursor-pointer' : ''
       }`}
     >
-      <audio ref={audioRef} src={weddingNasheed} preload="auto" />
+      <audio ref={audioRef} src={weddingNasheed} preload="none" />
 
       {/* Wrapped Hero Content */}
       <div
